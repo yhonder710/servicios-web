@@ -1,4 +1,43 @@
+.containerNaybar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #242424;
+  z-index: 10;
+}
+
+
 .naybar {
-  background-color: blue;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+
+
+  li {
+    list-style: none;
+    color: white;
+  }
+
+  ul {
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    font-weight: bold;
+
+    a {
+      color: #1FEACC;
+      transition: 300ms;
+
+      &:hover {
+        text-shadow:
+          0 0 5px #1feaccbe,
+          0 0 10px #1feaccb4;
+      }
+    }
+  }
 }

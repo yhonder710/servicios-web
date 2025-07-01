@@ -1,0 +1,20 @@
+.formas {
+  color: #1FEACC;
+
+  animation: formas 1.5s infinite alternate;
+  cursor: none;
+}
+
+
+@keyframes formas {
+  from {
+    text-shadow:
+      0 0 5px #1FEACC;
+  }
+
+  to {
+    text-shadow:
+      0 0 5px #1FEACC,
+      0 0 20px #1FEACC;
+  }
+}
