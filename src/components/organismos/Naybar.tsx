@@ -1,6 +1,7 @@
 import "./css/naybar.css"
 
 import logoMini from '../../../public/logo-2.png'
+import { Link } from "react-router-dom"
 
 export function Naybar() {
   return (
@@ -11,7 +12,7 @@ export function Naybar() {
         </a>
         <ul>
           {link.map(link => (
-            <li key={link.name}><a href={link.to}>{link.name}</a></li>
+            <Link key={link.name} to={link.to}>{link.name}</Link>
           ))}
         </ul>
       </nav>
